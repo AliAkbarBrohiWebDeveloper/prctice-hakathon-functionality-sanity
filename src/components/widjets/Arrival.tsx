@@ -48,7 +48,7 @@ export default function NewArrivalSection() {
             className="rounded-lg"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center">
-            <h3 className="text-white text-xl font-semibold">Women's Collections</h3>
+            <h3 className="text-white text-xl font-semibold">Womens Collections</h3>
             <p className="text-white">Explore our latest collections</p>
             <button className="mt-4 px-4 py-2 bg-white text-black rounded">Shop Now</button>
           </div>
