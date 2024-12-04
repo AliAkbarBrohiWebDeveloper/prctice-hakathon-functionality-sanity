@@ -35,15 +35,15 @@ const ContactPage = () => {
 
 
 
-<form action="">
-<input type="text " placeholder=' your Name'  required className='bg-gray-200  rounded-sm text-xl font-boldm w-full md:w-auto'/>
-<input type="text"  placeholder='your Email' required className=' bg-gray-200  rounded-sm text-xl font-bold ml-5 w-full md:w-auto mt-24 md:mt-3 h-auto'/>
+<form  className='mt-10'>
+<input type="text " placeholder=' your Name'  required className='bg-gray-200  rounded-sm   w-full md:w-auto h-12'/>
+<input type="text"  placeholder='your Email' required className=' bg-gray-200  rounded-sm ml-0 md:ml-5 w-full md:w-auto mt-24 md:mt-3 h-12'/>
 
-<input type="text" placeholder='Your Phone'  className=' bg-gray-200  rounded-sm text-xl font-bold ml-5 w-full md:w-auto mt-24 md:mt-3'/>
+<input type="text" placeholder='Your Phone'  className=' bg-gray-200  rounded-sm ml-0 md:ml-5 w-full md:w-auto mt-24 md:mt-3 h-12'/>
 <br />
 
 
-<textarea name="" id="" placeholder='Your message' rows={6}  className=' bg-gray-200  rounded-sm text-xl font-bold w-full mt-24 md:mt-3'></textarea>
+<textarea name="" id="" placeholder='Your message' rows={6}  className=' bg-gray-200  rounded-sm  w-full mt-24 md:mt-3'></textarea>
 
 <Button text='Send Message'/>
 

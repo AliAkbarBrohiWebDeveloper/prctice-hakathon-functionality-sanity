@@ -50,7 +50,7 @@ const Hero = () => {
 
 </div>
 
-<Image src={'/hero.png'} alt='' height={200} width={350} className='mr-28'/>
+<Image src={'/hero.png'} alt='' height={200} width={300} className='mr-40 mt-14'/>
 
 
     </div>

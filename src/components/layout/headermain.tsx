@@ -35,7 +35,7 @@ const Headermain = () => {
               <Link href={'/about'}>About</Link>
             </li>
             <li>
-              <Link href={'/signup'}>Signup</Link>
+              <Link href={'/signup'}>Sign Up</Link>
             </li>
           </ul>
         </div>
@@ -78,7 +78,7 @@ const Headermain = () => {
               <Link href={'/about'}>About</Link>
             </li>
             <li>
-              <Link href={'/signup'}>Signup</Link>
+              <Link href={'/signup'}>Sign Up</Link>
             </li>
           </ul>
         </div>
