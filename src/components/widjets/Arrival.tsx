@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import Wrapper from '../shareable/wrapper';
 
 export default function NewArrivalSection() {
   return (
-    <section className="p-8">
+    <Wrapper>
+    <section className="">
 
 
 
@@ -20,7 +22,7 @@ export default function NewArrivalSection() {
 
 
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="flex justify-center flex-col md:flex-row gap-x-9 items-center mt-6b gap-y-5 ">
         
         
         <div className="relative group">
@@ -88,5 +90,6 @@ export default function NewArrivalSection() {
         
       </div>
     </section>
+    </Wrapper>
   );
 }
