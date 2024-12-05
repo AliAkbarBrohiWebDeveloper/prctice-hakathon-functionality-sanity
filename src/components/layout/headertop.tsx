@@ -1,11 +1,10 @@
 
-import Wrapper from "../shareable/wrapper"
 
 const HeaderTop = () => {
   return (
 
 
-    <Wrapper>
+    
 <header>
 
 
@@ -30,7 +29,7 @@ const HeaderTop = () => {
 
     </main>
 </header>
-</Wrapper>
+
   )
 }
 
