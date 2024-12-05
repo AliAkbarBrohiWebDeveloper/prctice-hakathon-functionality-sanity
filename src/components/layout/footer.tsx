@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin, BiLogoTwitter } from 'react-icons/bi'
 
@@ -73,6 +74,13 @@ const Footer = () => {
         <BiLogoInstagram/>
         <BiLogoLinkedin/>
 </div>
+<div className='mt-3'>
+
+<Image src={'/FooterImage.png'} alt='' width={150} height={100}/>
+
+
+</div>
+
     </ul>
 </div>
 

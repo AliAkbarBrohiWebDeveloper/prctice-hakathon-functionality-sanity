@@ -4,7 +4,7 @@ import Wrapper from '../shareable/wrapper';
 export default function NewArrivalSection() {
   return (
     <Wrapper>
-    <section className="">
+    <section className="mt-9">
 
 
 

@@ -20,7 +20,7 @@ const Headermain = () => {
     <Wrapper>
       <header className="flex justify-between items-center p-4">
         <div>
-          <h4 className="text-xl font-semibold">Exclusive</h4>
+          <h4 className="text-2xl font-semibold">Exclusive</h4>
         </div>
 
         <div>

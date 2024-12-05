@@ -70,7 +70,7 @@ star:'⭐⭐⭐⭐ (75)'
 const Sales = () => {
   return (
     <Wrapper>
-<section className='mt-56 md:mt-28'>
+<section className='mt-20 md:mt-28'>
 
 <main>
 
