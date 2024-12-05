@@ -69,7 +69,7 @@ const Footer = () => {
         <li className='text-xl font-bold'>Download App</li>
         <li className='mt-3'>Save $3 with App New User Only</li>
 <div className='flex gap-x-5 items-center mt-3 text-3xl font-bold'>
-        <BiLogoFacebook/>
+        <BiLogoFacebook />
         <BiLogoTwitter/>
         <BiLogoInstagram/>
         <BiLogoLinkedin/>
