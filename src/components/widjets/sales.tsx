@@ -112,7 +112,7 @@ return(
 
 <div key={item.id} className=' bg-gray-200 text-center mt-auto  w-auto h-[175px]'>
 <Image src={item.src} alt='' height={200} width={200} className='hover:scale-105 duration-300 mx-auto md:mx-16'/>
-<h3 className='mt-3'>{item.header}</h3>
+<h3 className='mt-12'>{item.header}</h3>
 <h4 className='text-red-400 font-bold'>{item.price}</h4>
 <span> <del>{item.delprice}</del></span>
 
