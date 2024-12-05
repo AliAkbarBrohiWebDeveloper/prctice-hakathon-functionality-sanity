@@ -31,7 +31,7 @@ const Hero = () => {
 </div>
 
 
-<div className='bg-black w-[770px] h-[340px] text-white mx-3'>
+<div className='bg-black w-[770px] h-[340px] text-white mx-3 '>
 
     <div className='flex justify-evenly items-center'>
 
@@ -46,7 +46,14 @@ const Hero = () => {
 </div>
 
 <h1 className=' md:text-4xl mt-6 text-xl'>Up to 10% off Voucher</h1>
+<div className='flex items-center'>
 <p className='mt-6 text-xl underline'>Shop Now</p>
+
+<Image src={'/Vector5.png'} alt='' height={20} width={20} className='mt-6 ml-3 mr-12 md:mr-0'/>
+
+
+
+</div>
 
 
 </div>

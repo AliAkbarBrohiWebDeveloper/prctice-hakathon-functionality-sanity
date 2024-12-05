@@ -110,7 +110,7 @@ const Sales = () => {
 Images.map((item)=>{
 return(
 
-<div key={item.id} className=' bg-gray-200 text-center mt-auto  w-auto h-[175px]'>
+<div key={item.id} className=' bg-gray-200  text-center mt-auto  w-auto h-[175px]'>
 <Image src={item.src} alt='' height={200} width={200} className='hover:scale-105 duration-300 mx-auto md:mx-16'/>
 <h3 className='mt-9'>{item.header}</h3>
 <h4 className='text-red-400 font-bold'>{item.price}</h4>
@@ -122,8 +122,6 @@ return(
 })
 
 }
-
-
 
 </div>
 <div className='text-center mt-36'>

@@ -67,7 +67,7 @@ const Headermain = () => {
       <SheetTitle></SheetTitle>
       <SheetDescription>
       <div>
-          <ul className="flex flex-col gap-y-6 space-x-4">
+          <ul className="flex flex-col gap-y-6 space-x-4 text-xl font-bold">
             <li>
               <Link href={'/'}>Home</Link>
             </li>

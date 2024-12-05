@@ -1,9 +1,8 @@
 
-
 import React from 'react'
 import Wrapper from '../shareable/wrapper'
 import Image from 'next/image'
-import Button from '../shareable/Button'
+import Button from '@/components/shareable/Button'
 
 const products = [
   {
