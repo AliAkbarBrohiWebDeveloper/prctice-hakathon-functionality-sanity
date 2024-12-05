@@ -1,9 +1,8 @@
 import Wrapper from "@/components/shareable/wrapper"
 import Image from "next/image"
-import Link from "next/link"
 
 
-const SignUp = () => {
+const LoginPage = () => {
   return (
     <Wrapper>
 
@@ -20,23 +19,26 @@ const SignUp = () => {
 
 <div>
 
-<h5 className="text-2xl font-bold">Create an Account</h5>
+<h5 className="text-2xl font-bold">Log in to Exclusive</h5>
 <p className="mt-3">Enter your details below</p>
 
 <form action="" className="mt-5">
 
-<input type="text"placeholder="Name" required className="border-b-2 w-auto" />
-<br />
-<input type="email"  placeholder="Email or Phone Number" required className="border-b-2 w-auto mt-3"/>
+
+
+<input type="email"  placeholder="Enter Your  Phone Number" required className="border-b-2 w-auto mt-3"/>
 <br />
 <input type="password"  placeholder="Password" required className="border-b-2 w-auto mt-3"/>
-<p className="mt-5 px-6 py-2 bg-red-500 text-white font-bold">Create Account</p>
 
-<p className="mt-3">Already have account? 
+<br />
 
-<Link href={'/login'} className="font-bold"> Login</Link>
+<button className="mt-5 px-6 py-2 bg-red-500 text-white font-bold hover:scale-105 duration-300"> Login</button>
+<span className="ml-6 text-red-500 cursor-pointer ">Forgot password?</span>
 
-</p>
+
+
+
+
 
 
 </form>
@@ -57,4 +59,4 @@ const SignUp = () => {
   )
 }
 
-export default SignUp
+export default LoginPage

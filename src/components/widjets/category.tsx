@@ -21,7 +21,7 @@ const categories = [
   },
   {
     id: 4,
-    src: "/Cate1.png",
+    src: "/Vector1.png",
     header: "Camera"
   },
   {

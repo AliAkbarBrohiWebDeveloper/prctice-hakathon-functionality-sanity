@@ -150,7 +150,7 @@ const Services = () => {
           })}
         </main>
       </section>
-    </Wrapper>
+     </Wrapper>
   );
 };
 

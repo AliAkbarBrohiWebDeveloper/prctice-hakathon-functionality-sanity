@@ -17,7 +17,7 @@ const Footer = () => {
     </li>
     <li className='mt-3'>Subscribe</li>
     <li>Get 10% off your first order</li>
-    <li>
+    <li className='mt-3'>
 <input type="email" placeholder='Enter you Email' className='w-aut rounded-lg text-xl ' />
 
 
@@ -68,7 +68,7 @@ const Footer = () => {
     <ul>
         <li className='text-xl font-bold'>Download App</li>
         <li className='mt-3'>Save $3 with App New User Only</li>
-<div className='flex gap-x-5 items-center mt-3'>
+<div className='flex gap-x-5 items-center mt-3 text-3xl font-bold'>
         <BiLogoFacebook/>
         <BiLogoTwitter/>
         <BiLogoInstagram/>

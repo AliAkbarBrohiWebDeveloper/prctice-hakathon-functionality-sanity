@@ -24,7 +24,7 @@ const Headermain = () => {
         </div>
 
         <div>
-          <ul className=" space-x-4 hidden md:flex">
+          <ul className=" space-x-4 hidden md:flex font-semibold">
             <li>
               <Link href={'/'}>Home</Link>
             </li>

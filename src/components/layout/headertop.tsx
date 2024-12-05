@@ -1,9 +1,6 @@
 
 import Wrapper from "../shareable/wrapper"
 
-
-
-
 const HeaderTop = () => {
   return (
 
@@ -12,10 +9,10 @@ const HeaderTop = () => {
 <header>
 
 
-    <main className=" flex  justify-evenly  items-center flex-col md:flex-row bg-black text-white h-12">
+    <main className=" flex justify-evenly items-center flex-col md:flex-row bg-black text-white h-20 md:h-12 ">
 
-        <div  className='text-center text-sm '>
-<h5  className="text-white">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
+        <div  className='text-center text-sm  '>
+<h5  className="text-white text-center">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
 
 <button className=" font-bold underline ml-2">Shop Now</button>
 
@@ -24,16 +21,12 @@ const HeaderTop = () => {
 
 
     </div>
-<div className=" hidden md:flex items-center gap-x-4 ">
+<select className="bg-[#000000] text-white mt-2">
 
-<span>English </span>
+<option value="English">English</option>
+<option value={'Urdu'}> Urdu</option>
 
-<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.36403 4.95L11.314 0L12.728 1.414L6.36403 7.778L2.67029e-05 1.414L1.41403 0L6.36403 4.95Z" fill="white"/>
-</svg>
-
-
-</div>
+</select>
 
     </main>
 </header>

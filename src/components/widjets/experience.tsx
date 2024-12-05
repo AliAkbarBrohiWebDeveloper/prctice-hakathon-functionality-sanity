@@ -9,8 +9,8 @@ const Experience = () => {
       <section className='mt-20'>
         <main className='bg-[#000000] w-full max-w-[1100px] h-auto md:h-[340px] mx-auto md:mx-14 rounded-lg'>
           <div className='flex flex-col md:flex-row justify-between items-center md:h-full p-6'>
-            {/* Left Section */}
-            <div className='text-center md:text-left md:w-1/2'>
+            
+            <div className=' md:text-left md:w-1/2'>
               <p className='text-green-500 mt-8'>Categories</p>
               <h5 className='text-white text-2xl md:text-3xl font-bold mt-6 md:mt-20'>
                 Enhance Your Music Experience
