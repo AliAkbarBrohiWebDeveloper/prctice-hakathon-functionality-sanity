@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '../shareable/wrapper'
 import Link from 'next/link'
-import { BiCart, BiHeart, BiSearch } from 'react-icons/bi'
+import { BiCart, BiHeart, BiSearch, BiUser } from 'react-icons/bi'
 
 
 import {
@@ -54,6 +54,15 @@ const Headermain = () => {
 </div>
 <div>
   <Link href={'/cart'}><BiCart className='text-3xl font-bold'/></Link>
+
+
+</div>
+<div>
+
+<Link href={'/user'}>
+<BiUser className='text-3xl font-bold'/>
+
+</Link>
 
 
 </div>

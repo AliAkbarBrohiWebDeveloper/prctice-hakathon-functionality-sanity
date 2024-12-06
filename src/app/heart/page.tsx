@@ -100,7 +100,7 @@ return(
 
 <div className='flex justify-between items-center mt-20'>
 
-<h3 className='border-l-[20px] border-red-500 font-bold'>Just For You</h3>
+<h3 className='border-l-[20px] border-red-500  text-2xl font-bold'>Just For You</h3>
 
 <button className='px-6 py-2 border-2 '>See All</button>
 

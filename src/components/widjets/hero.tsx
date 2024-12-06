@@ -31,12 +31,12 @@ const Hero = () => {
 </div>
 
 
-<div className='bg-black w-[770px] h-[340px] text-white mx-3 '>
+<div className='bg-black w-[390px] md:w-[770px] h-[240px] md:h-[340px] text-white mx-3 '>
 
     <div className='flex justify-evenly items-center'>
 
 
-<div className='ml-[200px] md:ml-6'>
+<div className='ml-[40px] md:ml-6'>
 
 <div className='flex gap-x-3'>
 
@@ -58,7 +58,7 @@ const Hero = () => {
 
 </div>
 
-<Image src={'/hero.png'} alt='' height={200} width={300} className='mr-40 mt-14'/>
+<Image src={'/hero.png'} alt='' height={200} width={300} className='mr-40 mt-14 w-[150px]  h-[130px] md:w-[300px] md:h-[200px]'/>
 
 
     </div>
@@ -81,6 +81,9 @@ const Hero = () => {
 }
 
 export default Hero
+
+
+
 
 
 
