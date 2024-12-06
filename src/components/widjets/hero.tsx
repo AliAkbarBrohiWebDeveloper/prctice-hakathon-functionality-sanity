@@ -31,7 +31,7 @@ const Hero = () => {
 </div>
 
 
-<div className='bg-black w-[390px] md:w-[770px] h-[240px] md:h-[340px] text-white mx-3 '>
+<div className='bg-black w-[390px] md:w-[770px] h-[240px] md:h-[340px] text-white mx-3 rounded-sm '>
 
     <div className='flex justify-evenly items-center'>
 

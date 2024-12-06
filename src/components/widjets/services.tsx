@@ -27,7 +27,7 @@ const services = [
 const Services = () => {
   return (
     <Wrapper>
-      <section className='mt-20'>
+      <section className='mt-[800px] md:mt-28'>
         <main className='container grid grid-cols-1 md:grid-cols-3 gap-6'>
           {services.map((item) => {
             return (
