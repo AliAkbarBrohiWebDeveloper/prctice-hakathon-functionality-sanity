@@ -12,6 +12,15 @@ import {
     SheetTitle,
     SheetTrigger,
   } from "@/components/ui/sheet"
+
+
+
+  import {
+    HoverCard,
+    HoverCardContent,
+    HoverCardTrigger,
+  } from "@/components/ui/hover-card"
+  
 import { Menu } from 'lucide-react'
   
 
@@ -59,10 +68,31 @@ const Headermain = () => {
 </div>
 <div>
 
-<Link href={'/user'}>
+
+
+
+<HoverCard>
+  <HoverCardTrigger ><BiUser className='text-3xl font-bold'/></HoverCardTrigger>
+  <HoverCardContent>
+    <li className='flex flex-col gap-4 text-xl font-bold'>
+
+<Link href={'/user'}> Manage My Account</Link>
+<Link href={'order'}> My Order</Link>
+<Link href={'cancel'}> My Cancellations</Link>
+<Link href={'/reivews'}> My Reviews</Link>
+
+    </li>
+  </HoverCardContent>
+</HoverCard>
+
+
+
+
+
+{/* <Link href={'/user'}>
 <BiUser className='text-3xl font-bold'/>
 
-</Link>
+</Link> */}
 
 
 </div>
