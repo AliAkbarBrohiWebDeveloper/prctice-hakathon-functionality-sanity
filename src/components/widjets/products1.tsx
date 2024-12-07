@@ -81,7 +81,7 @@ const Products1 = () => {
             <Image src="/rec.png" alt="Icon" height={20} width={20} />
             <h3 className="text-red-500 font-bold">Our Products</h3>
           </div>
-          <div className="flex justify-between items-center mt-4">
+          <div className="mt-4">
             <h4 className="text-xl font-bold">Explore Our Products</h4>
           </div>
 
@@ -89,7 +89,7 @@ const Products1 = () => {
           <div className="container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-11">
             {products.map((item) => {
               return (
-                <div key={item.id} className="bg-gray-200 p-4 text-center rounded-lg shadow-md">
+                <div key={item.id} className=" p-4 text-center rounded-lg shadow-md">
                   <Image
                     src={item.src}
                     alt={item.header}

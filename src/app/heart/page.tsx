@@ -69,7 +69,7 @@ const HeartPage = () => {
 </div>
 
 
-<div className='conatiner grid grid-cols-2 md:grid-cols-4 gap-12 '>
+<div className='conatiner grid grid-cols-2 md:grid-cols-4 gap-16 '>
 
 {
 
@@ -107,7 +107,7 @@ return(
 </div>
 
 
-<div className='container grid grid-cols-2 md:grid-cols-4 gap-16 mt-12'>
+<div className='container grid grid-cols-2 md:grid-cols-4 gap-20 mt-12 '>
 
 <div>
 

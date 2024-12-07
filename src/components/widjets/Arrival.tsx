@@ -13,7 +13,7 @@ export default function NewArrivalSection() {
 <h3 className='text-red-500 font-bold'>Featured</h3>
 
 </div>
-<div className='flex gap-x-12 mt-4'>
+<div className=' mt-4'>
 
 <h4 className=' text-xl font-bold'>New Arrival</h4>
 </div>
@@ -22,7 +22,7 @@ export default function NewArrivalSection() {
 
 
 
-<main className="flex  gap-x-9 flex-col md:flex-row">
+<main className="flex  gap-x-9 flex-col md:flex-row mt-10">
 
 <div className="  bg-black h-[600px] w-[370px] md:w-[570px] rounded-sm">
 

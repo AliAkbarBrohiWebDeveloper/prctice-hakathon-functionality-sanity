@@ -72,7 +72,7 @@ const Headermain = () => {
 
 
 <HoverCard>
-  <HoverCardTrigger ><BiUser className='text-3xl font-bold'/></HoverCardTrigger>
+  <HoverCardTrigger ><BiUser className='text-3xl font-bold hidden md:flex'/></HoverCardTrigger>
   <HoverCardContent>
     <li className='flex flex-col gap-4 text-xl font-bold'>
 
@@ -88,11 +88,12 @@ const Headermain = () => {
 
 
 
-
-{/* <Link href={'/user'}>
+<div className='md:hidden'>
+ <Link href={'/user'}>
 <BiUser className='text-3xl font-bold'/>
 
-</Link> */}
+</Link>
+</div>
 
 
 </div>

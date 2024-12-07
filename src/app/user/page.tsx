@@ -66,16 +66,16 @@ const Userpage = () => {
 <p>Address
     
 </p>
-<input type="text" required className='border-2 bg-gray-200  rounded-sm w-64 md:w-96 h-12 '/>
+<input type="text" required className='border-2 bg-gray-200  rounded-sm w-64 md:w-96  h-12 '/>
 
 
 <h3 className='mt-10'>Password Changes</h3>
 
-<input type="text" placeholder='Current Password'  required className='border-2 bg-gray-200  rounded-sm mt-2 w-80 h-12'/>
+<input type="text" placeholder='Current Password'  required className='border-2 bg-gray-200  rounded-sm mt-2 w-80 md:w-[700px] h-12'/>
 <br />
-<input type="text" placeholder='New Passwod'  required className='border-2 bg-gray-200  rounded-sm mt-6 w-80 h-12'/>
+<input type="text" placeholder='New Passwod'  required className='border-2 bg-gray-200  rounded-sm mt-6 w-80 md:w-[700px] h-12'/>
 <br />
-<input type="text" placeholder='Confirm New Passwod'  required className='border-2 bg-gray-200  rounded-sm mt-5 w-80 h-12'/>
+<input type="text" placeholder='Confirm New Passwod'  required className='border-2 bg-gray-200  rounded-sm mt-5 w-80 md:w-[700px] h-12'/>
 
 <div className='flex justify-center gap-x-9 items-center mt-4'>
 <span className='font-semibold'>Cancel</span>

@@ -60,7 +60,7 @@ const Products = () => {
         
           <div className='container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 mt-11'>
             {products.map((item) => (
-              <div key={item.id} className='bg-gray-200 p-4 rounded-md text-center'>
+              <div key={item.id} className=' p-4 rounded-md text-center'>
                 <Image
                   src={item.src}
                   alt=''
