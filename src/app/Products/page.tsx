@@ -1,8 +1,10 @@
 
 import React from 'react'
-import Wrapper from '../shareable/wrapper'
+
 import Image from 'next/image'
 import Button from '@/components/shareable/Button'
+import Wrapper from '@/components/shareable/wrapper'
+import Link from 'next/link'
 
 const products = [
   {
@@ -45,7 +47,7 @@ const Products = () => {
       <section className='mt-9'>
         <main>
 
-          <div className='flex gap-3 items-center'>
+          <div className='flex gap-3 items-center '>
             <Image src={'/rec.png'} alt='' height={20} width={20} />
             <h3 className='text-red-500 font-bold'>This Month</h3>
           </div>
@@ -58,16 +60,31 @@ const Products = () => {
           </div>
 
         
-          <div className='container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 mt-11'>
+          <div className='container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-11 gap-x-10 gap-y-4'>
             {products.map((item) => (
-              <div key={item.id} className=' p-4 rounded-md text-center'>
+              <div key={item.id} className=' p-4 rounded-md text-center lg:w-[270px] md:w-[240px] w-[200px] h-auto relative group'>
+                <div className='lg:w-[270px] md:w-[230px] w-[200px] md:h-[240px] h-[200px] lg:h-[250px] bg-[#F5F5F5] rounded-[4px] justify-center items-center flex relative'>
                 <Image
                   src={item.src}
                   alt=''
                   height={200}
                   width={200}
-                  className='hover:scale-105 duration-300 mx-auto'
+                  className='hover:scale-105 duration-300 mx-auto  lg:w-[190px] lg:h-[190px] md:w-[170px] md:h-[170px] w-[150px] h-[150px]'
                 />
+
+<Link href={`/products/${item.id}`}>
+                  <div className="absolute bottom-0 left-0 w-full h-[30px] md:h-[40px] bg-black text-white flex items-center justify-center transition-all duration-300 transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-[12px] md:text-[16px] font-medium">Add to Cart</p>
+                  </div>
+                </Link>
+
+
+
+
+                </div>
+
+
+
                 <h3 className='mt-3 text-sm sm:text-base'>{item.header}</h3>
                 <h4 className='text-red-400 font-bold text-sm sm:text-base'>{item.price}</h4>
                 <span className='block text-xs sm:text-sm'>

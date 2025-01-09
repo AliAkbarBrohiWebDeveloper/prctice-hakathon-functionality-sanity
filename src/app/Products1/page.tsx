@@ -1,8 +1,11 @@
 
 import React from 'react';
-import Wrapper from '../shareable/wrapper';
+
 import Image from 'next/image';
-import Button from '../shareable/Button';
+
+import Wrapper from '@/components/shareable/wrapper';
+import Button from '@/components/shareable/Button';
+import Link from 'next/link';
 
 const products = [
   {
@@ -71,7 +74,7 @@ const products = [
   }
 ];
 
-const Products1 = () => {
+const Productses = () => {
   return (
     <Wrapper>
       <section className='mt-10'>
@@ -86,10 +89,12 @@ const Products1 = () => {
           </div>
 
           
-          <div className="container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-11">
+          <div className="container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-11 gap-x-10">
             {products.map((item) => {
               return (
-                <div key={item.id} className=" p-4 text-center rounded-lg shadow-md">
+                <div key={item.id} className=" p-4 text-center rounded-lg shadow-md   lg:w-[270px] md:w-[240px] w-[200px] h-auto relative group">
+
+<div className='lg:w-[270px] md:w-[230px] w-[200px] md:h-[240px] h-[200px] lg:h-[250px] bg-[#F5F5F5] rounded-[4px] justify-center items-center flex relative'>
                   <Image
                     src={item.src}
                     alt={item.header}
@@ -97,6 +102,14 @@ const Products1 = () => {
                     width={200}
                     className="mx-auto hover:scale-105 transition-all duration-300"
                   />
+
+<Link href={`/products/${item.id}`}>
+                  <div className="absolute bottom-0 left-0 w-full h-[30px] md:h-[40px] bg-black text-white flex items-center justify-center transition-all duration-300 transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-[12px] md:text-[16px] font-medium">Add to Cart</p>
+                  </div>
+                </Link>
+
+                  </div>
                   <h3 className="mt-3 text-sm sm:text-base">{item.header}</h3>
                   <h4 className="text-red-400 font-bold text-sm sm:text-base">{item.price}</h4>
                   <span className="block text-xs sm:text-sm"><del>{item.delprice}</del></span>
@@ -116,7 +129,7 @@ const Products1 = () => {
   );
 };
 
-export default Products1;
+export default Productses;
 
 
 

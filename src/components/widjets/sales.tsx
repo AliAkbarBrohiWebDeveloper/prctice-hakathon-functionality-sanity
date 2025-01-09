@@ -2,6 +2,7 @@ import React from 'react'
 import Wrapper from '../shareable/wrapper'
 import Image from 'next/image'
 import Button from '../shareable/Button'
+import Link from 'next/link'
 
 
 const Images=[
@@ -110,13 +111,24 @@ const Sales = () => {
 Images.map((item)=>{
 return(
 
-<div key={item.id} className=' bg-gray-200  text-center mt-auto  w-auto h-[175px]'>
+<div key={item.id} className=' bg-gray-200  text-center mt-auto    lg:w-[270px] md:w-[240px] w-[200px] h-auto relative group'>
+
+<div className='lg:w-[270px] md:w-[230px] w-[200px] md:h-[240px] h-[200px] lg:h-[250px] bg-[#F5F5F5] rounded-[4px] justify-center items-center flex relative'>
+
 <Image src={item.src} alt='' height={200} width={200} className='hover:scale-105 duration-300 mx-auto md:mx-16'/>
+
+<Link href={`/products/${item.id}`}>
+                  <div className="absolute bottom-0 left-0 w-full h-[30px] md:h-[40px] bg-black text-white flex items-center justify-center transition-all duration-300 transform translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+                    <p className="text-[12px] md:text-[16px] font-medium">Add to Cart</p>
+                  </div>
+                </Link>
+</div>
 <h3 className='mt-9'>{item.header}</h3>
 <h4 className='text-red-400 font-bold'>{item.price}</h4>
 <span> <del>{item.delprice}</del></span>
 
 </div>
+
 )
 
 })
