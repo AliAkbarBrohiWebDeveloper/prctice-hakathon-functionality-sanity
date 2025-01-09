@@ -106,7 +106,7 @@ const Sales = () => {
 </div>
 
 
-<div className='  container grid  grid-cols-2 md:grid-cols-4 gap-x-9 gap-y-36 mt-11'>
+<div className='  flex justify-center items-center flex-col md:flex-row gap-x-6 gap-y-6'>
 {
 Images.map((item)=>{
 return(

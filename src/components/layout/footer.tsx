@@ -4,7 +4,7 @@ import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin, BiLogoTwitter } from '
 
 const Footer = () => {
   return (
-<footer className='bg-black text-white  h-auto px-6  mx-auto max-w-screen-2xl mt-36 md:mt-9'>
+<footer className='bg-black text-white  h-auto px-6  mx-auto'>
 
 <div className='container grid grid-cols-1 md:grid-cols-5 py-24'>
 <div>
