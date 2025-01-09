@@ -89,7 +89,7 @@ const Productses = () => {
           </div>
 
           
-          <div className="container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-11 gap-x-20 md:gap-x-10">
+          <div className="flex justify-center items-center flex-col md:flex-row gap-x-6 gap-y-6">
             {products.map((item) => {
               return (
                 <div key={item.id} className=" p-4 text-center rounded-lg shadow-md   lg:w-[270px] md:w-[240px] w-[200px] h-auto relative group">

@@ -60,7 +60,7 @@ const Products = () => {
           </div>
 
         
-          <div className='container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-11 gap-x-10 gap-y-4'>
+          <div className='flex justify-center items-center flex-col md:flex-row gap-x-6 gap-y-6'>
             {products.map((item) => (
               <div key={item.id} className=' p-4 rounded-md text-center lg:w-[270px] md:w-[240px] w-[200px] h-auto relative group'>
                 <div className='lg:w-[270px] md:w-[230px] w-[200px] md:h-[240px] h-[200px] lg:h-[250px] bg-[#F5F5F5] rounded-[4px] justify-center items-center flex relative'>
