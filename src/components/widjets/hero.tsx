@@ -185,6 +185,54 @@
 
 
 
+// import React from 'react';
+// import Wrapper from '../shareable/wrapper';
+// import Image from 'next/image';
+
+// const Hero = () => {
+//   return (
+//     <Wrapper>
+//       <section className="mt-16">
+//         <main className="flex justify-between items-center gap-x-6 flex-col md:flex-row mx-auto">
+//           <div className="w-full md:w-auto">
+//             <ul className="hidden md:block">
+//               <li>Womans Fashion</li>
+//               <li>Mens Fashion</li>
+//               <li>Electronics</li>
+//               <li>Home & Lifestyle</li>
+//               <li>Medicine</li>
+//               <li>Sports & Outdoor</li>
+//               <li>Babys & Toys</li>
+//               <li>Groceries & Pets</li>
+//               <li>Health & Beauty</li>
+//             </ul>
+//           </div>
+
+//           <div className="bg-black text-white w-full md:w-[770px] h-auto md:h-[340px] mx-3 p-6 flex flex-col md:flex-row justify-between items-center">
+//             <div className="text-center md:text-left">
+//               <div className="flex justify-center md:justify-start gap-x-3">
+//                 <Image src={'/apple.png'} alt='apple logo' height={10} width={20} />
+//                 <span>iPhone 14 Series</span>
+//               </div>
+//               <h1 className="md:text-4xl text-xl mt-6">Up to 10% off Voucher</h1>
+//               <p className="mt-6 text-xl underline cursor-pointer">Shop Now</p>
+//             </div>
+
+//             <div className="mt-6 md:mt-0">
+//               <Image src={'/hero.png'} alt='' height={200} width={300} className="mx-auto md:mx-0" />
+//             </div>
+//           </div>
+//         </main>
+//       </section>
+//     </Wrapper>
+//   );
+// };
+
+// export default Hero;
+
+
+
+
 import React from 'react';
 import Wrapper from '../shareable/wrapper';
 import Image from 'next/image';
@@ -193,8 +241,8 @@ const Hero = () => {
   return (
     <Wrapper>
       <section className="mt-16">
-        <main className="flex justify-between items-center gap-x-6 flex-col md:flex-row mx-auto">
-          <div className="w-full md:w-auto">
+        <main className="flex flex-col md:flex-row items-center md:justify-between gap-6 mx-auto">
+          <div className="w-full md:w-[200px] lg:w-[250px]">
             <ul className="hidden md:block">
               <li>Womans Fashion</li>
               <li>Mens Fashion</li>
@@ -208,18 +256,26 @@ const Hero = () => {
             </ul>
           </div>
 
-          <div className="bg-black text-white w-full md:w-[770px] h-auto md:h-[340px] mx-3 p-6 flex flex-col md:flex-row justify-between items-center">
+          <div className="bg-black text-white w-full md:w-[770px] h-auto md:h-[340px] mx-3 p-6 flex flex-col md:flex-row justify-between items-center md:items-start rounded-lg">
             <div className="text-center md:text-left">
-              <div className="flex justify-center md:justify-start gap-x-3">
-                <Image src={'/apple.png'} alt='apple logo' height={10} width={20} />
-                <span>iPhone 14 Series</span>
+              <div className="flex justify-center md:justify-start gap-x-3 items-center">
+                <Image src={'/apple.png'} alt="apple logo" height={10} width={20} />
+                <span className="font-semibold text-xl">iPhone 14 Series</span>
               </div>
-              <h1 className="md:text-4xl text-xl mt-6">Up to 10% off Voucher</h1>
+              <h1 className="md:text-4xl text-2xl mt-6 font-bold leading-tight">
+                Up to 10% off Voucher
+              </h1>
               <p className="mt-6 text-xl underline cursor-pointer">Shop Now</p>
             </div>
 
             <div className="mt-6 md:mt-0">
-              <Image src={'/hero.png'} alt='' height={200} width={300} className="mx-auto md:mx-0" />
+              <Image
+                src={'/hero.png'}
+                alt="hero image"
+                height={200}
+                width={300}
+                className="mx-auto md:mx-0 rounded-lg"
+              />
             </div>
           </div>
         </main>
@@ -229,7 +285,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-

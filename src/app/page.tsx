@@ -4,7 +4,7 @@
 import Hero from '@/components/widjets/hero'
 
 
-import Sales from '@/components/widjets/sales'
+// import Sales from '@/components/widjets/sales'
 
 
 import React from 'react'
@@ -15,7 +15,7 @@ const page = () => {
   return (
     <div>
 <Hero/>
-<Sales/>
+{/* <Sales/> */}
 {/* <Category/> */}
 
 <Products/>
