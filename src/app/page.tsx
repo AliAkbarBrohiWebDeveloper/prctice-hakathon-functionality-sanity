@@ -16,14 +16,14 @@ const page = () => {
     <div>
 <Hero/>
 <Sales/>
-<Category/>
+{/* <Category/> */}
 
 <Products/>
-<Experience/>
+{/* <Experience/> */}
 
 <Productses/>
-<Arrival/>
-<Services/>
+{/* <Arrival/> */}
+{/* <Services/> */}
 
 
     </div>

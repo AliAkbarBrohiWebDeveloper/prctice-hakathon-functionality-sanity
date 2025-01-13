@@ -22,6 +22,7 @@ import {
   } from "@/components/ui/hover-card"
   
 import { Menu } from 'lucide-react'
+import Navbar from '../Navbar'
   
 
 const Headermain = () => {
@@ -62,7 +63,10 @@ const Headermain = () => {
 
 </div>
 <div>
-  <Link href={'/cart'}><BiCart className='text-3xl font-bold'/></Link>
+  {/* <Link href={'/cart'}><BiCart className='text-3xl font-bold'/></Link> */}
+
+
+  <Navbar/>
 
 
 </div>
