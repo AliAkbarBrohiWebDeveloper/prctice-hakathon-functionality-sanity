@@ -1,7 +1,7 @@
 import React from 'react'
 import Wrapper from '../shareable/wrapper'
 import Link from 'next/link'
-import { BiCart, BiHeart, BiSearch, BiUser } from 'react-icons/bi'
+import { BiHeart, BiSearch, BiUser } from 'react-icons/bi'
 
 
 import {

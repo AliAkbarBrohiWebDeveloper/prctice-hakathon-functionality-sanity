@@ -4,6 +4,29 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+
+
+
+type Product = {
+  _id: string;
+  name: string;
+  description: string;
+  price: number;
+  discountPercentage: number;
+  priceWithoutDiscount: number;
+  rating: number;
+  ratingCount: number;
+  tags: string[];
+  sizes: string[];
+  image: {
+    asset: {
+      _id: string;
+      url: string;
+    };
+  };
+};
+
+
 async function page() {
   const data = await client.fetch(`
     *[_type == "product"]{
@@ -35,7 +58,7 @@ async function page() {
     <div className="py-10 px-5 bg-gray-100">
       <h1 className="text-3xl font-bold text-center mb-12">Our Products</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {data.map((product:any) => (
+        {data.map((product:Product) => (
           <div key={product._id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
             <div className="relative">
             <Link href={`/Products2/${product._id}`}>  <Image
@@ -64,7 +87,7 @@ async function page() {
 
               {product.tags?.length > 0 && (
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {product.tags.map((tag:any, index:any) => (
+                  {product.tags.map((tag, index) => (
                     <span key={index} className="px-3 py-1 text-sm bg-blue-500 text-white rounded-full">
                       {tag}
                     </span>
@@ -74,7 +97,7 @@ async function page() {
 
               {product.sizes?.length > 0 && (
                 <div className="flex gap-2 mb-4">
-                  {product.sizes.map((size:any, index:any) => (
+                  {product.sizes.map((size, index) => (
                     <span key={index} className="px-3 py-1 text-sm bg-gray-300 rounded-full">
                       {size}
                     </span>

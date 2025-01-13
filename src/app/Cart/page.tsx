@@ -6,7 +6,7 @@ import { removeFromCart, updateQuantity, clearCart } from '@/app/Redux/cartSlice
 import { RootState } from '@/app/Redux/store';
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
-import { LucideDelete, RemoveFormatting } from 'lucide-react';
+import { LucideDelete} from 'lucide-react';
 import { FaMinus, FaPlus } from 'react-icons/fa';
 
 const CartPage = () => {
