@@ -1,14 +1,25 @@
+
+
 "use client"
 import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from './cartSlice'; // Adjust the path if necessary
+import persistedCartReducer from './cartSlice';
+import { persistStore } from 'redux-persist';
 
-// Configure the Redux store
+
 export const store = configureStore({
   reducer: {
-    cart: cartReducer, // Add other reducers here if needed
+    cart: persistedCartReducer,  
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: ['persist/PERSIST'], 
+      },
+    }),
 });
 
-// Type for RootState and AppDispatch (optional, but helpful for typing)
+// Create persistor to manage persistence
+export const persistor = persistStore(store);
+
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

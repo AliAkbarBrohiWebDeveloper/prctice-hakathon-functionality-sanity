@@ -5,8 +5,6 @@ import Link from 'next/link'
 import React from 'react'
 
 
-
-
 type Product = {
   _id: string;
   name: string;
